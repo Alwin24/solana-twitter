@@ -1,0 +1,19 @@
+[programs.localnet]
+solana_twitter = "DiAaQiuJGm6vAVye1s3nzLhGNZy8NF3zetXqqjPgY4DC"
+
+[programs.devnet]
+solana_twitter = "J556LW4UAZoAgRDpiFrv3BtCKhHeDPHTJCD2e5ABX637"
+
+[programs.mainnet]
+solana_twitter = "DiAaQiuJGm6vAVye1s3nzLhGNZy8NF3zetXqqjPgY4DC"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/alwin/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+copy-idl = "mkdir -p app/src/idl && cp target/idl/solana_twitter.json app/src/idl/solana_twitter.json"
